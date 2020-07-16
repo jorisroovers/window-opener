@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+LIBS:window-opener-relay-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 5900 4100 0    50   ~ 0
+GND line
+Text Notes 5900 3950 0    50   ~ 0
+5v line
+Text Notes 4850 5300 0    50   ~ 0
+Close\nButton
+Wire Wire Line
+	5200 4800 5150 4800
+$Comp
+L Device:R_US R2
+U 1 1 5CE54988
+P 5200 4200
+F 0 "R2" H 5268 4246 50  0000 L CNN
+F 1 "220 Ohm" H 5268 4155 50  0000 L CNN
+F 2 "" V 5240 4190 50  0001 C CNN
+F 3 "~" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CE5C555
+P 3800 4800
+F 0 "SW1" H 3800 5085 50  0000 C CNN
+F 1 "SW_Push" H 3800 4994 50  0000 C CNN
+F 2 "" H 3800 5000 50  0001 C CNN
+F 3 "~" H 3800 5000 50  0001 C CNN
+	1    3800 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 4800 3600 3900
+Text Notes 3700 5300 0    50   ~ 0
+Open\nButton
+Wire Wire Line
+	4000 4800 4000 4600
+$Comp
+L Device:R_US R1
+U 1 1 5CE5C55B
+P 4000 4200
+F 0 "R1" H 4068 4246 50  0000 L CNN
+F 1 "220 Ohm" H 4068 4155 50  0000 L CNN
+F 2 "" V 4040 4190 50  0001 C CNN
+F 3 "~" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3550 3550 3900
+Wire Wire Line
+	5700 2900 5700 1800
+Wire Wire Line
+	2350 2500 2350 2550
+Wire Wire Line
+	5700 1800 4650 1800
+Wire Wire Line
+	3450 1800 4150 1800
+$Comp
+L power:+12V #PWR0101
+U 1 1 5CE66FBE
+P 2350 2250
+F 0 "#PWR0101" H 2350 2100 50  0001 C CNN
+F 1 "+12V" H 2365 2423 50  0000 C CNN
+F 2 "" H 2350 2250 50  0001 C CNN
+F 3 "" H 2350 2250 50  0001 C CNN
+	1    2350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CE67B06
+P 2350 2550
+F 0 "#PWR0102" H 2350 2300 50  0001 C CNN
+F 1 "GND" H 2355 2377 50  0000 C CNN
+F 2 "" H 2350 2550 50  0001 C CNN
+F 3 "" H 2350 2550 50  0001 C CNN
+	1    2350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2250 3550 2250
+Wire Wire Line
+	3550 2250 5800 2250
+Connection ~ 3550 2250
+Wire Wire Line
+	3550 2250 3550 2850
+Wire Wire Line
+	2350 2500 3350 2500
+Wire Wire Line
+	5600 2500 3350 2500
+Connection ~ 3350 2500
+Wire Wire Line
+	3350 2850 3350 2500
+Wire Wire Line
+	5800 2250 5800 3000
+$Comp
+L Relay:JQC-3FF-S-Z K2
+U 1 1 5CE60C20
+P 5450 3250
+F 0 "K2" V 5650 2700 50  0000 L CNN
+F 1 "JQC-3FF-S-Z" V 5550 2250 50  0000 L BNN
+F 2 "" H 5450 3250 50  0001 C CNN
+F 3 "" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1800 3450 2950
+Wire Wire Line
+	5800 3600 5800 3900
+Wire Wire Line
+	5750 3600 5750 4050
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 5CE552AD
+P 1750 4200
+F 0 "A1" H 1750 5381 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 1750 5290 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 1900 3150 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 1550 5250 50  0001 C CNN
+	1    1750 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 3550 3450 3600
+Wire Wire Line
+	3450 3600 2250 3600
+Wire Wire Line
+	5700 3800 5700 3600
+Wire Wire Line
+	2250 3800 5700 3800
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CE553F1
+P 4950 4800
+F 0 "SW2" H 4950 5085 50  0000 C CNN
+F 1 "SW_Push" H 4950 4994 50  0000 C CNN
+F 2 "" H 4950 5000 50  0001 C CNN
+F 3 "~" H 4950 5000 50  0001 C CNN
+	1    4950 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 3900 4750 4800
+Wire Wire Line
+	5200 4400 2250 4400
+Wire Wire Line
+	5200 4350 5200 4400
+Wire Wire Line
+	4000 4600 2250 4600
+Connection ~ 4000 4600
+Wire Wire Line
+	4000 4350 4000 4600
+Connection ~ 5200 4400
+Wire Wire Line
+	5200 4400 5200 4800
+Wire Wire Line
+	1550 5200 1550 5500
+Wire Wire Line
+	1550 5500 2500 5500
+Wire Wire Line
+	2500 5500 2500 3900
+Wire Wire Line
+	2550 4050 2550 3050
+Wire Wire Line
+	2550 3050 1650 3050
+Wire Wire Line
+	1650 3050 1650 3100
+Wire Wire Line
+	5600 2500 5600 2900
+Wire Wire Line
+	3500 3550 3500 4050
+$Comp
+L Motor:Motor_DC M1
+U 1 1 5CE54A7F
+P 4350 1800
+F 0 "M1" V 4650 1700 50  0000 L CNN
+F 1 "Motor_DC" V 4550 1600 50  0000 L CNN
+F 2 "" H 4350 1710 50  0001 C CNN
+F 3 "~" H 4350 1710 50  0001 C CNN
+	1    4350 1800
+	0    -1   -1   0   
+$EndComp
+Text Notes 4700 1600 0    50   ~ 0
+Linear Actuator
+Text Notes 3700 3700 0    50   ~ 0
+Open\nRelay
+Text Notes 5400 3700 0    50   ~ 0
+Close\nRelay
+$Comp
+L Relay:JQC-3FF-S-Z K1
+U 1 1 5CE6B1B4
+P 3200 3200
+F 0 "K1" V 3400 2650 50  0000 L CNN
+F 1 "JQC-3FF-S-Z" V 3300 2200 50  0000 L BNN
+F 2 "" H 3200 3200 50  0001 C CNN
+F 3 "" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 3900 3550 3900
+Connection ~ 3550 3900
+Wire Wire Line
+	3550 3900 3600 3900
+Connection ~ 3600 3900
+Wire Wire Line
+	3600 3900 4750 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	4750 3900 5800 3900
+Wire Wire Line
+	2550 4050 3500 4050
+Connection ~ 3500 4050
+Wire Wire Line
+	3500 4050 4000 4050
+Connection ~ 4000 4050
+Wire Wire Line
+	4000 4050 5200 4050
+Connection ~ 5200 4050
+Wire Wire Line
+	5200 4050 5750 4050
+Wire Wire Line
+	4650 1800 4550 1800
+Connection ~ 4650 1800
+$EndSCHEMATC

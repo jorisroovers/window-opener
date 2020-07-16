@@ -1,0 +1,6 @@
+.venv*
+*.pyc
+# Never include secrets.* files, so we don't accidentally upload passwords
+secrets.*
+
+.esphome
