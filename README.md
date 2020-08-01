@@ -10,6 +10,7 @@ This repository contains all related source material.
 - `esphome/`: [ESPHome](https://esphome.io/) config files
 - `CAD/`: CAD (3D) models of the enclosure and custom hinges that were 3D printed. I used [Fusion360](https://www.autodesk.com/products/fusion-360/personal).
 - `diagrams/`: Some diagrams in [Fritzing](https://fritzing.org/) and [KiCad](https://kicad-pcb.org/). Some of these are not entirely up-to-date with the latest build, but they should still be useful if you want to understand some of the details.
+- `gcode/`: gcode files to print the 3D models. These are mostly for my own consumption as you'll probably have re-slice the STL files in the `CAD/` folder to match your printer and filament.
 - `archive/`: various files related to prototyping and experimentation
 
 # ESPHome
