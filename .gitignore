@@ -4,3 +4,5 @@
 secrets.*
 
 .esphome
+
+~*.pptx
