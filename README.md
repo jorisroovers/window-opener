@@ -1,7 +1,7 @@
 # WindowOpener
 
 I built a custom PCB in a 3D-printed enclosure to control a motorized arm to automatically open and close my bedroom window. 
-All integrated with [my existing home automation stack](https://github.com/jorisroovers/casa). For much more detail, read the related blog post (TODO :-)).
+All integrated with [my existing home automation stack](https://github.com/jorisroovers/casa). **For much more detail, read my [Window Opener blogpost](https://jorisroovers.com/posts/window-opener).**
 
 This repository contains all related source material.
 
